@@ -1,278 +1,383 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CooperativaCulturaqueTransforma | Arte y Transformación Social</title>
+<title>Cooperativa Cultura que Transforma | Arte y Transformación Social</title>
 
-<style> 
-
+<style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    font-family: 'Segoe UI', sans-serif;
-    background:#111;
-    color:#f5f5f5;
-    line-height:1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f2eb;
+    color:#2b2b2b;
+    line-height:1.7;
 }
 
 header{
-    height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url('https://images.unsplash.com/photo-1503095396549-807759245b35');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url('hero.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
 }
 
 .hero{
-    max-width:800px;
+    max-width:900px;
 }
 
 .hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-    color:#C9A86A;
+    font-size:4rem;
+    color:#d6b47b;
+    margin-bottom:20px;
+    letter-spacing:1px;
 }
 
 .hero p{
-    font-size:1.3rem;
-    margin-bottom:30px;
+    font-size:1.3rem;
+    color:#f8f8f8;
+    margin-bottom:35px;
 }
 
 .btn{
-    display:inline-block;
-    padding:15px 30px;
-    background:#C9A86A;
-    color:#111;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:30px;
+    display:inline-block;
+    padding:15px 32px;
+    background:#d6b47b;
+    color:#1a1a1a;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#c4a066;
+    transform:translateY(-2px);
 }
 
 section{
-    padding:80px 10%;
+    padding:90px 10%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
 }
 
 h2{
-    color:#C9A86A;
-    margin-bottom:30px;
-    text-align:center;
-    font-size:2.5rem;
+    color:#7a5c2e;
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:20px;
 }
 
-.about{
-    max-width:900px;
-    margin:auto;
-    text-align:center;
+.section-text{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 50px auto;
+    font-size:1.08rem;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:16px;
+    object-fit:cover;
+    min-height:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.about-grid p{
+    font-size:1.05rem;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
 }
 
 .card{
-    background:#1d1d1d;
-    padding:30px;
-    border-radius:10px;
-    transition:0.3s;
+    background:#ffffff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
+    box-shadow:0 14px 34px rgba(0,0,0,.12);
+}
+
+.card h3{
+    color:#7a5c2e;
+    margin-bottom:15px;
+    font-size:1.3rem;
 }
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
 }
 
 .gallery img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:10px;
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+
+.highlight{
+    background:#e9dfcf;
+}
+
+.interview-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+.interview-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.interview-card h3{
+    color:#7a5c2e;
+    margin-bottom:15px;
 }
 
 .contact{
-    text-align:center;
+    text-align:center;
+}
+
+.contact p{
+    font-size:1.1rem;
+    margin-top:10px;
 }
 
 footer{
-    background:#000;
-    text-align:center;
-    padding:30px;
-    color:#999;
+    background:#1f1f1f;
+    color:#d8d8d8;
+    text-align:center;
+    padding:35px 20px;
 }
 
+footer p{
+    margin:6px 0;
+}
+
+@media (max-width:900px){
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .about-grid,
+    .interview-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:70px 7%;
+    }
+}
 </style>
 
 </head>
+
 <body>
 
 <header>
-
-<div class="hero">
-
-<h1>Teatro Invisible</h1>
-
-<p>
-Arte, participación y transformación social a través de intervenciones
-escénicas en espacios públicos para adultos mayores.
-</p>
-
-<a href="Trayectoria.html" class="btn">
-Conoce nuestro trabajo
-</a>
- 
-</div>
-
+    <div class="hero">
+        <h1>Cooperativa Cultura que Transforma</h1>
+        <p>
+            Arte, participación y transformación social a través de proyectos culturales,
+            educativos y comunitarios desarrollados por mujeres comprometidas con el
+            fortalecimiento de los territorios.
+        </p>
+        <a href="Trayectoria.html" class="btn">Conoce nuestro trabajo</a>
+    </div>
 </header>
 
 <section id="sobre">
+    <div class="container">
+        <h2>Sobre nosotras</h2>
+        <div class="about-grid">
+            <div>
+                <p>
+                    Somos una cooperativa cultural integrada por mujeres que impulsan proyectos de
+                    arte, educación y participación comunitaria para fortalecer los territorios y
+                    generar transformación social.
+                </p>
+                <br>
+                <p>
+                    Nuestra labor conecta creatividad, territorio y comunidad, generando experiencias
+                    que promueven el diálogo, la reflexión crítica, la expresión colectiva y el
+                    fortalecimiento del tejido social.
+                </p>
+                <br>
+                <p>
+                    Entendemos la cultura como una herramienta de encuentro, cuidado y construcción
+                    colectiva, capaz de mejorar la calidad de vida de las personas y de abrir espacios
+                    para nuevas formas de participación social.
+                </p>
+            </div>
 
-<h2>Sobre nosotros</h2>
-
-<div class="about">
-
-<p>
-
-Organización dedicada al desarrollo de proyectos culturales, 
-comunitarios y educativos que integran el arte como herramienta 
-de encuentro, participación y transformación social. 
-Nuestra labor conecta creatividad, territorio y comunidad, 
-generando experiencias que promueven el diálogo, la reflexión crítica, 
-la expresión colectiva y el fortalecimiento del tejido social.
-
-</p>
-
+```
+        <!-- Reemplaza MUJERES_TRABAJANDO.jpg por el nombre de tu foto -->
+        <img src="MUJERES_TRABAJANDO.jpg" alt="Integrantes de la cooperativa">
+    </div>
 </div>
+```
+
+</section>
+
+<section class="highlight">
+    <div class="container">
+        <h2>Nuestra visión</h2>
+        <p class="section-text">
+            Aspiramos a consolidarnos como una cooperativa cultural referente en Chile por la calidad
+            de nuestras metodologías participativas, el trabajo colaborativo entre mujeres y la
+            capacidad de desarrollar proyectos culturales sostenibles con impacto comunitario.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Áreas de trabajo</h2>
+
+```
+    <div class="cards">
+        <div class="card">
+            <h3>Teatro Invisible</h3>
+            <p>
+                Intervenciones escénicas en espacios públicos que invitan a reflexionar sobre
+                problemáticas sociales y a fortalecer la participación ciudadana.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Talleres</h3>
+            <p>
+                Formación artística y comunitaria para organizaciones, universidades, agrupaciones
+                y comunidades, promoviendo la creatividad y el encuentro.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Investigación</h3>
+            <p>
+                Desarrollo metodológico que integra Teatro Invisible, educación emocional y
+                neurociencia aplicada para promover bienestar, aprendizaje socioemocional y
+                participación comunitaria.
+            </p>
+        </div>
+    </div>
+</div>
+```
+
+</section>
+
+<section class="highlight">
+    <div class="container">
+        <h2>Galería</h2>
+
+```
+    <div class="gallery">
+        <!-- Reemplaza estos nombres por tus archivos reales -->
+        <img src="GALERIA_1.jpg" alt="Actividad cultural 1">
+        <img src="GALERIA_2.jpg" alt="Actividad cultural 2">
+        <img src="GALERIA_3.jpg" alt="Actividad cultural 3">
+    </div>
+</div>
+```
 
 </section>
 
 <section>
+    <div class="container">
+        <h2>Entrevistas y circulación internacional</h2>
 
-<h2>Áreas de Trabajo</h2>
+```
+    <div class="interview-grid">
+        <div class="interview-card">
+            <h3>Entrevistas</h3>
+            <p>
+                Conversación sobre Teatro Invisible, participación comunitaria, neurociencia
+                aplicada y el trabajo desarrollado con personas mayores en la comuna de San Antonio.
+            </p>
 
-<div class="cards">
+            <a href="https://www.youtube.com/watch?v=-S-2ypK0SC4&t=3s" target="_blank" class="btn" style="margin-top:20px;">
+                Ver entrevista
+            </a>
+        </div>
 
-<div class="card">
-<h3>Teatro Invisible</h3>
-<p>
-Intervenciones escénicas en espacios públicos que invitan a reflexionar sobre problemáticas sociales.
-</p>
+        <div class="interview-card">
+            <h3>Conversatorio internacional</h3>
+            <p>
+                Presentación de experiencias en encuentros latinoamericanos de artes escénicas
+                realizados en Montevideo, Uruguay, compartiendo metodologías vinculadas al Teatro
+                Invisible y los procesos de creación colectiva.
+            </p>
+
+            <a href="URUGUAY_1.jpg" target="_blank" class="btn" style="margin-top:20px;">
+                Espacio de Desarrollo Armónico
+            </a>
+
+            <br><br>
+
+            <a href="URUGUAY_2.jpg" target="_blank" class="btn">
+                Ánima Espacio Cultural
+            </a>
+        </div>
+    </div>
 </div>
-
-<div class="card">
-<h3>Talleres</h3>
-<p>
-Formación para organizaciones, universidades, agrupaciones y comunidades.
-</p>
-</div>
-
-<div class="card">
-<h3>Investigación</h3>
-<p>
-Procesos de investigación y desarrollo metodológico que integran Teatro Invisible, educación emocional y neurociencia aplicada para promover el bienestar, el aprendizaje socioemocional y la participación comunitaria.
-</p>
-</div>
-
-</div>
+```
 
 </section>
 
-<section>
+<section class="contact highlight">
+    <div class="container">
+        <h2>Contacto</h2>
 
-<h2>Galería</h2>
-
-<div class="gallery">
-
-<img src="Foto 1.png">
-
-<img src="Foto 2.png">
-
-<img src="Foto3.png">
-
+```
+    <p><strong>Email:</strong> jorgeruizgalleguillos@gmail.com</p>
+    <p><strong>Teléfono:</strong> +56 9 2602 2940</p>
+    <p><strong>Cooperativa Cultura que Transforma</strong></p>
 </div>
-
-</section>
-
-<section>
-
-<h2>Entrevistas y Circulación Internacional</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Entrevistas</h3>
-
-<p>
-Conversación sobre Teatro Invisible, participación comunitaria, neurociencia aplicada y el trabajo desarrollado con personas mayores en la comuna de San Antonio.
-</p>
-
-<a href="https://www.youtube.com/watch?v=-S-2ypK0SC4&t=3s" target="_blank" class="btn" style="margin-top:15px; display:inline-block;">
-Ver entrevista
-</a>
-
-</div>
-<div class="card">
-
-<h3>Conversatorio Internacional</h3>
-
-<p>
-Presentación de experiencias en encuentros latinoamericanos de artes escénicas realizados en Montevideo, Uruguay, compartiendo metodologías vinculadas al Teatro Invisible, la participación comunitaria y los procesos de creación colectiva.
-</p>
-
-<a href="1000176261.png" target="_blank" class="btn" style="margin-top:25px; display:inline-block;">
-Taller en Espacio de Desarrollo Armónico, Uruguay
-
-</a>
-
-<br><br>
-
-<a href="1000176260.png" target="_blank" class="btn">
-Taller en Ánima Espacio Cultural, Uruguay
-</a>
-
-</div>
-
-</section>
-
-<section class="contact">
-
-<h2>Contacto</h2>
-
-<p>
-jorgeruizgalleguillos@gmail.com
-</p>
-
+```
 
 </section>
 
 <footer>
-
-© 2026 Teatro Invisible · Arte y Transformación Social
-
-</footer>
-
-</body>
-</html>
-<footer>
-
-© 2026 Cooperativa Cultura que Transforma · Arte y Transformación Social
-
+    <p>© 2026 Cooperativa Cultura que Transforma</p>
+    <p>Arte · Educación · Participación Comunitaria</p>
 </footer>
 
 </body>
