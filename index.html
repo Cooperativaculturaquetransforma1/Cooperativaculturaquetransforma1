@@ -1,391 +1,671 @@
 <!DOCTYPE html>
-
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Asociación Cultura que Transforma | Arte y Transformación Social</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background:#f5f2eb;
-    color:#2b2b2b; 
+    color:#2b2b2b;
     line-height:1.7;
 }
 
+
 header{
+
     min-height:100vh;
+
     background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url('hero.jpg');
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('hero.jpg');
+
     background-size:cover;
     background-position:center;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     padding:40px 20px;
+
 }
+
 
 .hero{
+
     max-width:900px;
+
 }
 
+
 .hero h1{
+
     font-size:4rem;
     color:#d6b47b;
     margin-bottom:20px;
-    letter-spacing:1px;
+
 }
+
 
 .hero p{
+
     font-size:1.3rem;
-    color:#f8f8f8;
+    color:#fff;
     margin-bottom:35px;
+
 }
+
 
 .btn{
+
     display:inline-block;
+
     padding:15px 32px;
+
     background:#d6b47b;
+
     color:#1a1a1a;
+
     text-decoration:none;
+
     font-weight:700;
+
     border-radius:40px;
-    transition:.3s;
+
 }
 
-.btn:hover{
-    background:#c4a066;
-    transform:translateY(-2px);
-}
 
 section{
+
     padding:90px 10%;
+
 }
+
 
 .container{
+
     max-width:1200px;
     margin:auto;
+
 }
+
 
 h2{
+
     color:#7a5c2e;
+
     text-align:center;
+
     font-size:2.5rem;
-    margin-bottom:20px;
+
+    margin-bottom:40px;
+
 }
 
-.section-text{
-    text-align:center;
-    max-width:900px;
-    margin:0 auto 50px auto;
-    font-size:1.08rem;
-}
+
+/* SOBRE NOSOTRAS CENTRADO */
 
 .about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+
+    display:flex;
+
+    justify-content:center;
+
     align-items:center;
+
 }
 
-.about-grid img{
-    width:100%;
-    border-radius:16px;
-    object-fit:cover;
-    min-height:400px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+.about-grid > div{
+
+    max-width:850px;
+
+    text-align:center;
+
 }
+
 
 .about-grid p{
-    font-size:1.05rem;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    margin-top:40px;
+
+/* VISION */
+
+.section-text{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:1.1rem;
+
 }
 
-.card{
-    background:#ffffff;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 14px 34px rgba(0,0,0,.12);
-}
-
-.card h3{
-    color:#7a5c2e;
-    margin-bottom:15px;
-    font-size:1.3rem;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.gallery img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
-    border-radius:16px;
-    box-shadow:0 8px 24px rgba(0,0,0,.12);
-}
 
 .highlight{
-    background:#e9dfcf; 
+
+    background:#e9dfcf;
+
 }
+
+
+/* TARJETAS */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+}
+
+
+.card h3{
+
+    color:#7a5c2e;
+
+    margin-bottom:15px;
+
+}
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:20px;
+
+}
+
+
+.gallery img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
+
+}
+
+
 
 .interview-grid{
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:30px;
-    margin-top:40px;
+
 }
+
 
 .interview-card{
+
     background:#fff;
+
     padding:30px;
+
     border-radius:18px;
+
     box-shadow:0 8px 24px rgba(0,0,0,.08);
+
 }
+
 
 .interview-card h3{
+
     color:#7a5c2e;
+
     margin-bottom:15px;
+
 }
+
 
 .contact{
+
     text-align:center;
+
 }
+
 
 .contact p{
+
     font-size:1.1rem;
-    margin-top:10px;
+
+    margin:10px;
+
 }
+
 
 footer{
+
     background:#1f1f1f;
+
     color:#d8d8d8;
+
     text-align:center;
+
     padding:35px 20px;
+
 }
 
-footer p{
-    margin:6px 0;
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:2.8rem;
+
 }
 
-@media (max-width:900px){
-    .hero h1{
-        font-size:2.8rem;
-    }
 
-    .about-grid,
-    .interview-grid{
-        grid-template-columns:1fr;
-    }
+.interview-grid{
 
-    section{
-        padding:70px 7%;
-    }
+    grid-template-columns:1fr;
+
 }
+
+
+section{
+
+    padding:70px 7%;
+
+}
+
+
+}
+
+
 </style>
+
 
 </head>
 
+
 <body>
 
+
 <header>
-    <div class="hero">
-        <h1>Asociación Cultura que Transforma</h1>
-        <p>
-            Programas artísticos, participación y transformación social a través de proyectos culturales,
-            educativos y comunitarios desarrollados por mujeres comprometidas con el
-            fortalecimiento de los territorios.
-        </p>
-        <a href="Trayectoria.html" class="btn">Conoce nuestro trabajo</a>
-    </div>
+
+<div class="hero">
+
+<h1>Asociación Cultura que Transforma</h1>
+
+
+<p>
+
+Programas artísticos, participación y transformación social a través de proyectos culturales,
+educativos y comunitarios desarrollados por mujeres comprometidas con el fortalecimiento de
+los territorios.
+
+</p>
+
+
+<a href="Trayectoria.html" class="btn">
+
+Conoce nuestro trabajo
+
+</a>
+
+
+</div>
+
 </header>
 
+
+
 <section id="sobre">
-    <div class="container">
-        <h2>Sobre nosotras</h2>
-        <div class="about-grid">
-            <div>
-                <p>
-                    Somos una cooperativa cultural integrada por mujeres que impulsan proyectos de
-                    arte, educación y participación comunitaria para fortalecer los territorios y
-                    generar transformación social.
-                </p>
-                <br>
-                <p>
-                    Nuestra labor conecta creatividad, territorio y comunidad, generando experiencias
-                    que promueven el diálogo, la reflexión crítica, la expresión colectiva y el
-                    fortalecimiento delgenerar transformación social.
-        </p>
 
-        <br>
+<div class="container">
 
-        <p>
-            Nuestra labor conecta creatividad, territorio y comunidad, generando experiencias
-            que promueven el diálogo, la reflexión crítica, la expresión colectiva y el
-            fortalecimiento del tejido social.
-        </p>
 
-        <br>
+<h2>Sobre nosotras</h2>
 
-        <p>
-            Entendemos la cultura como una herramienta de encuentro, cuidado y construcción
-            colectiva, capaz de mejorar la calidad de vida de las personas y de abrir espacios
-            para nuevas formas de participación social.
-        </p>
 
-    </div>
+<div class="about-grid">
+
+
+<div>
+
+
+<p>
+
+Somos una cooperativa cultural integrada por mujeres que impulsan proyectos de
+arte, educación y participación comunitaria para fortalecer los territorios y
+generar transformación social.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Nuestra labor conecta creatividad, territorio y comunidad, generando experiencias
+que promueven el diálogo, la reflexión crítica, la expresión colectiva y el
+fortalecimiento del tejido social.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+Entendemos la cultura como una herramienta de encuentro, cuidado y construcción
+colectiva, capaz de mejorar la calidad de vida de las personas y de abrir espacios
+para nuevas formas de participación social.
+
+</p>
+
+
 </div>
-```
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
 
 <section class="highlight">
-    <div class="container">
-        <h2>Nuestra visión</h2>
-        <p class="section-text">
-            Aspiramos a consolidarnos como una cooperativa cultural referente en Chile por la calidad
-            de nuestras metodologías participativas, el trabajo colaborativo entre mujeres y la
-            capacidad de desarrollar proyectos culturales sostenibles con impacto comunitario.
-        </p>
-    </div>
+
+<div class="container">
+
+
+<h2>Nuestra visión</h2>
+
+
+<p class="section-text">
+
+Aspiramos a consolidarnos como una cooperativa cultural referente en Chile por la calidad
+de nuestras metodologías participativas, el trabajo colaborativo entre mujeres y la
+capacidad de desarrollar proyectos culturales sostenibles con impacto comunitario.
+
+</p>
+
+
+</div>
+
 </section>
+
+
+
 
 <section>
-    <div class="container">
-        <h2>Áreas de trabajo</h2>
 
-```
-    <div class="cards">
-        <div class="card">
-            <h3>Teatro Invisible</h3>
-            <p>
-                Intervenciones escénicas en espacios públicos que invitan a reflexionar sobre
-                problemáticas sociales y a fortalecer la participación ciudadana.
-            </p>
-        </div>
+<div class="container">
 
-        <div class="card">
-            <h3>Talleres</h3>
-            <p>
-                Formación artística y comunitaria para organizaciones, universidades, agrupaciones
-                y comunidades, promoviendo la creatividad y el encuentro.
-            </p>
-        </div>
 
-        <div class="card">
-            <h3>Investigación</h3>
-            <p>
-                Desarrollo metodológico que integra Teatro Invisible, educación emocional y
-                neurociencia aplicada para promover bienestar, aprendizaje socioemocional y
-                participación comunitaria.
-            </p>
-        </div>
-    </div>
+<h2>Áreas de trabajo</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Teatro Invisible</h3>
+
+<p>
+
+Intervenciones escénicas en espacios públicos que invitan a reflexionar sobre
+problemáticas sociales y fortalecer la participación ciudadana.
+
+</p>
+
 </div>
-```
+
+
+
+<div class="card">
+
+<h3>Talleres</h3>
+
+<p>
+
+Formación artística y comunitaria para organizaciones, universidades,
+agrupaciones y comunidades, promoviendo creatividad y encuentro.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Investigación</h3>
+
+<p>
+
+Desarrollo metodológico que integra Teatro Invisible, educación emocional y
+neurociencia aplicada para promover bienestar y participación comunitaria.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 <section class="highlight">
-    <div class="container">
-        <h2>Galería</h2>
 
-```
-    <div class="gallery">
-        <!-- Reemplaza estos nombres por tus archivos reales -->
-        <img src="foto7.jpg" alt="Actividad cultural 1">
-        <img src="foto6.jpg" alt="Actividad cultural 2">
-        <img src="Foto 2.png" alt="Actividad cultural 3">
-    </div>
+
+<div class="container">
+
+
+<h2>Galería</h2>
+
+
+<div class="gallery">
+
+
+<img src="foto7.jpg" alt="Actividad cultural">
+
+<img src="foto6.jpg" alt="Actividad cultural">
+
+<img src="Foto 2.png" alt="Actividad cultural">
+
+
 </div>
-```
+
+
+</div>
+
 
 </section>
 
+
+
+
+
 <section>
-    <div class="container">
-        <h2>Lanzamiento libros e intervenciónes escénicas</h2>
 
-```
-    <div class="interview-grid">
-        <div class="interview-card">
-            <h3>Entrevistas</h3>
-            <p>
-                Conversación sobre Teatro Invisible, participación comunitaria, neurociencia
-                aplicada y el trabajo desarrollado con personas mayores en la comuna de San Antonio.
-            </p>
 
-            <a href="https://www.youtube.com/watch?v=-S-2ypK0SC4&t=3s" target="_blank" class="btn" style="margin-top:20px;">
-                Ver entrevista
-            </a>
-        </div>
+<div class="container">
 
-        <div class="interview-card">
-            <h3>Lanzamiento libro</h3>
-            <p>
-                Desarrollo de actividades de mediación cultural que incluyen el lanzamiento de libros, 
-                conversatorios e intervenciones escénicas. Entre ellas destacan la presentación del libro "Dedos, 
-                o Estado del Arte", de Catalina Ramírez.
-            </p>
 
-            <a href="foto3.jpg" target="_blank" class="btn" style="margin-top:20px;">
-    Ver fotografía
+<h2>Lanzamiento libros e intervenciones escénicas</h2>
+
+
+
+<div class="interview-grid">
+
+
+
+<div class="interview-card">
+
+
+<h3>Entrevistas</h3>
+
+
+<p>
+
+Conversación sobre Teatro Invisible, participación comunitaria, neurociencia
+aplicada y el trabajo desarrollado con personas mayores en la comuna de San Antonio.
+
+</p>
+
+
+
+<a href="https://www.youtube.com/watch?v=-S-2ypK0SC4&t=3s"
+target="_blank"
+class="btn"
+style="margin-top:20px;">
+
+Ver entrevista
+
 </a>
-            </a>
 
-            <br><br>
-                
-            </a>
-        </div>
-    </div>
+
 </div>
-```
+
+
+
+
+
+<div class="interview-card">
+
+
+<h3>Lanzamiento libro</h3>
+
+
+<p>
+
+Desarrollo de actividades de mediación cultural que incluyen lanzamiento de libros,
+conversatorios e intervenciones escénicas. Entre ellas destacan la presentación del
+libro "Dedos" y "Estado del Arte", de Catalina Ramírez.
+
+</p>
+
+
+
+<a href="foto3.jpg"
+target="_blank"
+class="btn"
+style="margin-top:20px;">
+
+Ver fotografía
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 <section class="contact highlight">
-    <div class="container">
-        <h2>Contacto</h2>
 
-```
-    <p><strong>Email:</strong> amancay.wessel@gmail.com</p>
+
+<div class="container">
+
+
+<h2>Contacto</h2>
+
+
+<p><strong>Email:</strong> amancay.wessel@gmail.com</p>
+
 <p><strong>Teléfono:</strong> +56 9 2602 2940</p>
+
 <p><strong>Ubicación:</strong> Región de Los Lagos, Chile</p>
+
 <p><strong>Asociación Cultura que Transforma</strong></p>
+
+
 </div>
-```
+
 
 </section>
 
+
+
+
+
 <footer>
-    <p>© 2026 Cultura que Transforma</p>
-    <p>Arte · Educación · Participación Comunitaria</p>
+
+
+<p>© 2026 Cultura que Transforma</p>
+
+<p>Arte · Educación · Participación Comunitaria</p>
+
+
 </footer>
 
-</body>
-</html>
 
+
+</body>
+
+</html>
