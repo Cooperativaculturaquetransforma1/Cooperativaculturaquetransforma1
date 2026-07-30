@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CooperativaCulturaqueTransforma | Arte y Transformación Social</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#111;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1503095396549-807759245b35');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    color:#C9A86A;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#C9A86A;
+    color:#111;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    color:#C9A86A;
+    margin-bottom:30px;
+    text-align:center;
+    font-size:2.5rem;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Teatro Invisible</h1>
+
+<p>
+Arte, participación y transformación social a través de intervenciones
+escénicas en espacios públicos para adultos mayores.
+</p>
+
+<a href="Trayectoria.html" class="btn">
+Conoce nuestro trabajo
+</a>
+ 
+</div>
+
+</header>
+
+<section id="sobre">
+
+<h2>Sobre nosotros</h2>
+
+<div class="about">
+
+<p>
+
+Organización dedicada al desarrollo de proyectos culturales, 
+comunitarios y educativos que integran el arte como herramienta 
+de encuentro, participación y transformación social. 
+Nuestra labor conecta creatividad, territorio y comunidad, 
+generando experiencias que promueven el diálogo, la reflexión crítica, 
+la expresión colectiva y el fortalecimiento del tejido social.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Áreas de Trabajo</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Teatro Invisible</h3>
+<p>
+Intervenciones escénicas en espacios públicos que invitan a reflexionar sobre problemáticas sociales.
+</p>
+</div>
+
+<div class="card">
+<h3>Talleres</h3>
+<p>
+Formación para organizaciones, universidades, agrupaciones y comunidades.
+</p>
+</div>
+
+<div class="card">
+<h3>Investigación</h3>
+<p>
+Procesos de investigación y desarrollo metodológico que integran Teatro Invisible, educación emocional y neurociencia aplicada para promover el bienestar, el aprendizaje socioemocional y la participación comunitaria.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Galería</h2>
+
+<div class="gallery">
+
+<img src="Foto 1.png">
+
+<img src="Foto 2.png">
+
+<img src="Foto3.png">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Entrevistas y Circulación Internacional</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Entrevistas</h3>
+
+<p>
+Conversación sobre Teatro Invisible, participación comunitaria, neurociencia aplicada y el trabajo desarrollado con personas mayores en la comuna de San Antonio.
+</p>
+
+<a href="https://www.youtube.com/watch?v=-S-2ypK0SC4&t=3s" target="_blank" class="btn" style="margin-top:15px; display:inline-block;">
+Ver entrevista
+</a>
+
+</div>
+<div class="card">
+
+<h3>Conversatorio Internacional</h3>
+
+<p>
+Presentación de experiencias en encuentros latinoamericanos de artes escénicas realizados en Montevideo, Uruguay, compartiendo metodologías vinculadas al Teatro Invisible, la participación comunitaria y los procesos de creación colectiva.
+</p>
+
+<a href="1000176261.png" target="_blank" class="btn" style="margin-top:25px; display:inline-block;">
+Taller en Espacio de Desarrollo Armónico, Uruguay
+
+</a>
+
+<br><br>
+
+<a href="1000176260.png" target="_blank" class="btn">
+Taller en Ánima Espacio Cultural, Uruguay
+</a>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contacto</h2>
+
+<p>
+jorgeruizgalleguillos@gmail.com
+</p>
+
+
+</section>
+
+<footer>
+
+© 2026 Teatro Invisible · Arte y Transformación Social
+
+</footer>
+
+</body>
+</html>
+-- 
+ Amancay Wessel Hofer
+Periodista - Gestora Cultural+569 26022940
 
